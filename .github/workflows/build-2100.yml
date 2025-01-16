@@ -1,18 +1,8 @@
 name: Build RM2100 R2100
 
 on: 
-  release:
-    types: [published]
-#  push:
-#    tags:
-#    - 'v*'
-  #  branches: 
-  #    - master
-  schedule:
-    - cron: 0 17 * * 4
-#  watch:
-#    types: [started]
-
+  workflow_dispatch:
+  
 jobs:
   build:
     runs-on: ubuntu-18.04
